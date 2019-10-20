@@ -1,10 +1,5 @@
 geopy
 ipython
 jupyter
-matplotlib
-numpy
-pandas
 pyephem
-pysolar
-pytz
-sunpy
+

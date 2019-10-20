@@ -1,12 +1,11 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-.ipynb_checkpoints
 
 # C extensions
 *.so
 
-# Distribution / packaging
+# Distribution / packaging / virtualenvs
 .Python
 env/
 build/
@@ -24,9 +23,8 @@ var/
 .installed.cfg
 *.egg
 *.pem
-
-# Config files
-o2b_api.conf
+.ipynb_checkpoints
+venv/
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
