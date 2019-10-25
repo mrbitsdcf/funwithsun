@@ -8,13 +8,9 @@ import time
 
 
 url = "http://api.open-notify.org/astros.json"
-
 response = urllib.request.urlopen(url)
-
 result = json.loads(response.read())
-
 print("People in space:", result['number'])
-
 people = result['people']
 
 for p in people:
@@ -34,15 +30,15 @@ print("Longitude:", lon)
 screen = turtle.Screen()
 screen.setup(720, 360)
 screen.setworldcoordinates(-180, -90, 180, 90)
-#screen.register_shape('iss2.png')
-screen.bgpic('map.jpg')
+screen.bgpic('map.gif')
 
 iss = turtle.Turtle()
-iss.shape('iss2.png')
+screen.register_shape('iss2.gif')
+iss.shape('iss2.gif')
 iss.setheading(90)
 iss.penup()
 
-iss.goto(lon, lat)
+iss.goto(float(lon), float(lat))
 
 lat = -23.25
 lon = -46.66
